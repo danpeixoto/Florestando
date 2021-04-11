@@ -1,0 +1,200 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-blue: #38AFC1;
+	--color-blue-light: #70D2E0;
+	--color-green: #769028;
+	--color-green-light: #CCF258;
+	--color-light: #fff;
+	--color-dark: #262626;
+
+	--font-size: 16px;
+	--ff-headings: 'Signika', sans-serif;
+	--ff-text: 'Raleway', sans-serif;
+}
+
+/* Gerais */
+
+
+html {
+	font-family: var(--ff-text);
+}
+
+section,
+footer {
+	padding: 2em;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	font-family: var(--ff-headings);
+}
+
+/* Botões */
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--color-light);
+	padding: 8px 15px;
+	margin-top: 1em;
+	border-radius: 3px;
+	border: transparent 1px solid;
+	cursor: pointer;
+	transition: 500ms ease;
+	transition-property: background-color, border-color;
+}
+
+.btn--full {
+	background-color: var(--color-blue);
+	border-color: var(--color-blue);
+	font-weight: bold;
+}
+
+.btn--ghost {
+	background-color: transparent;
+	border-color: var(--color-light);
+	font-weight: 400;
+}
+
+.btn:hover {
+	background-color: var(--color-green);
+	border-color: var(--color-green);
+}
+
+
+/* Hero */
+
+.hero {
+	position: relative;
+	background: url(../img/hero-bkg.png) bottom no-repeat fixed;
+	background-size: cover;
+	color: var(--color-light);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero__header {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.hero__logo {
+	padding-left: 2em;
+}
+
+.logo__icon,
+.logo__text {
+	font-size: 1.6rem;
+}
+
+.hero__content {
+	margin: 0 auto;
+}
+
+.hero__texts {
+	text-align: left;
+}
+
+.hero__title {
+	padding: 0;
+	font-size: 4rem;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.hero__subtitle {
+	margin-top: .5rem;
+	font-size: 1.1rem;
+	opacity: .8;
+}
+
+@media screen and (min-width:600px) {
+	.hero {
+		display: block;
+	}
+
+	/* TODO implementar o nav */
+	.hero__content {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+}
+
+/* Hero Nav */
+
+.hero__menu-button {
+	position: relative;
+	cursor: pointer;
+	border: none;
+	padding: 2em;
+	background-color: transparent;
+}
+
+.menu-button__bars {
+	display: block;
+	position: relative;
+	pointer-events: none;
+}
+
+.menu-button__bars,
+.menu-button__bars::after,
+.menu-button__bars::before {
+	transition: 250ms ease-out;
+	transition-property: transform, top, bottom;
+	background-color: var(--color-light);
+	width: 2em;
+	height: 3px;
+}
+
+.menu-button__bars {
+	position: relative;
+}
+
+.menu-button__bars::after,
+.menu-button__bars::before {
+	content: "";
+	position: absolute;
+	left: 0;
+}
+
+.menu-button__bars::before {
+	top: -9px;
+}
+
+.menu-button__bars::after {
+	bottom: -9px;
+}
+
+.menu-button__bars--open {
+	transform: rotate(45deg);
+}
+
+.menu-button__bars--open::before {
+	transform: rotate(90deg);
+	top: -0px;
+}
+
+.menu-button__bars--open::after {
+	transform: rotate(-90deg);
+	bottom: -0px;
+}
+
+.header__nav {
+	display: none;
+}

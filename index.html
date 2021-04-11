@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Signika:wght@700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./recursos/css/normalize.css">
+	<link rel="stylesheet" href="./recursos/css/styeles.css">
+	<title>Florestando</title>
+</head>
+
+<body>
+	<!-- Hero -->
+	<section class="hero">
+		<header class="hero__header">
+			<div class="hero__logo">
+				<i class="fas fa-tree logo__icon"></i>
+				<span class="logo__text">Florestando</span>
+			</div>
+
+			<button class="hero__menu-button">
+				<span class="menu-button__bars"></span>
+			</button>
+
+			<nav class="header__nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="" class="nav__link">Home</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="hero__content">
+			<div class="hero__texts">
+				<h1 class="hero__title">Parque de aventuras</h1>
+				<p class="hero__subtitle">Você quer uma viagem inesquecível?</p>
+			</div>
+			<div class="hero__cta">
+				<a href="#" class="btn btn--full">Escolha um destino</a>
+				<a href="#" class="btn btn--ghost"> <i class="fas fa-play-circle"></i> <span>Trailer</span></a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Tours -->
+	<section class="tours">
+		<h2 class="section__title section__title--tours">Tours</h2>
+		<div class="tours__content">
+			<div class="tour">
+				<img src="./recursos/img/tour__1.png" alt="Pessoa escalando" class="tour__img">
+				<div class="tour__data tour__data--azul">
+					<h3 class="tour__name">Escalada</h3>
+					<div class="tour__dates">
+						<p>Datas</p>
+						<div class="dates__date">01/01/2022</div>
+						<div class="dates__date">01/01/2022</div>
+						<div class="dates__date">01/01/2022</div>
+						<div class="tour__info"><a href="" class="tour__link tour__link--verde">Mais</a><span
+								class="tour__price">R$999</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tour">
+				<img src="./recursos/img/tour__2.png" alt="" class="tour__img">
+				<div class="tour__data tour__data--verde">
+					<h3 class="tour__name">Caminhada</h3>
+					<div class="tour__dates">
+						<p>Datas</p>
+						<div class="dates__date">01/01/2022</div>
+						<div class="dates__date">01/01/2022</div>
+						<div class="dates__date">01/01/2022</div>
+						<div class="tour__info"><a href="" class="tour__link tour__link--azul">Mais</a><span
+								class="tour__price">R$999</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Blog -->
+	<section class="blog">
+		<h2 class="section__title section__title--blog">Blog</h2>
+		<div class="blog__content">
+			<div class="blog__imgs">
+				<img src="./recursos/img/marcelo__back.png" alt="" class="blog__img blog__img--back">
+				<img src="./recursos/img/marcelo___front.png" alt="" class="blog__img blog__img--front">
+			</div>
+			<div class="blog__client">
+				<h3 class="client__name">Marcelo</h3>
+				<div class="client__stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="client__tour">Tour: Escalada</p>
+				<p class="client__opnion">
+					Dolore dolore est velit culpa velit et duis sunt qui culpa sunt enim labore
+					veniam. Irure elit reprehenderit deserunt est eu do. Ullamco amet elit reprehenderit commodo labore.
+					Anim deserunt eiusmod in nisi consectetur eiusmod est deserunt fugiat elit sunt officia tempor.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contato -->
+	<section class="contato">
+		<h2 class="section__title section__title--contato">Contato</h2>
+		<div class="contato__contents">
+			<div class="contato__info">
+				<address class="contato__address">
+					Rua São Paulo <br /> São Paulo, Brasil
+				</address>
+				<p class="contato__horario">
+					Horário de funcionamento:<br /> <time>08:00</time> - <time>17:30</time>
+				</p>
+				<p class="contato__telefones">
+					Telefones:<br />
+					<span itemprop="telephone">
+						<a href="tel:+999999-99999">(99)9999-99999</a>
+					</span><br />
+					<span itemprop="telephone">
+						<a href="tel:+999999-99999">(99)9999-99999</a>
+					</span>
+				</p>
+			</div>
+
+			<div class="contato__email">
+				<h3 class="email__title">Mande um email</h3>
+				<form class="email__form">
+					<div class="form__item">
+						<input class="form__input" type="text" name="nome" autocomplete="off" required>
+						<label for="nome" class="form__label">
+							<span class="label__span">Nome</span>
+						</label>
+					</div>
+					<div class="form__item">
+						<input class="form__input" type="email" name="email" autocomplete="off" required>
+						<label for="email" class="form__label">
+							<span class="label__span">Email</span>
+						</label>
+					</div>
+					<div class="form__item">
+						<input class="form__input" type="text" name="duvida" autocomplete="off" required>
+						<label for="duvida" class="form__label">
+							<span class="label__span">Dúvida</span>
+						</label>
+					</div>
+					<div class="form__item"><input type="submit" value="Submit" name="submit"></div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="logo">
+			<i class="fas fa-tree logo__icon"></i>
+			<span class="logo__text">Florestando</span>
+		</div>
+		<div class="footer__nav">
+			<ul class="footer__pages" titulo="Produtos">
+				<li class="footer__page">Lorem</li>
+				<li class="footer__page">Ipsum</li>
+				<li class="footer__page">Dolor</li>
+				<li class="footer__page">Sit amet</li>
+			</ul>
+			<ul class="footer__pages" titulo="Produtos">
+				<li class="footer__page">Lorem</li>
+				<li class="footer__page">Ipsum</li>
+				<li class="footer__page">Dolor</li>
+				<li class="footer__page">Sit amet</li>
+			</ul>
+			<ul class="footer__pages" titulo="Produtos">
+				<li class="footer__page">Lorem</li>
+				<li class="footer__page">Ipsum</li>
+				<li class="footer__page">Dolor</li>
+				<li class="footer__page">Sit amet</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="./recursos/js/index.js" type="application/javascript"></script>
+</body>
+
+</html>
