@@ -17,7 +17,7 @@
 
 <body>
 	<!-- Hero -->
-	<section class="hero">
+	<section class="hero" id="home">
 		<header class="hero__header">
 			<div class="hero__logo">
 				<i class="fas fa-tree logo__icon"></i>
@@ -30,10 +30,10 @@
 
 			<nav class="header__nav">
 				<ul class="nav__list">
-					<li class="nav__item"><a href="" class="nav__link">Home</a></li>
-					<li class="nav__item"><a href="" class="nav__link">Home</a></li>
-					<li class="nav__item"><a href="" class="nav__link">Home</a></li>
-					<li class="nav__item"><a href="" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#tours" class="nav__link">Tours</a></li>
+					<li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+					<li class="nav__item"><a href="#contatos" class="nav__link">Contato</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -53,8 +53,8 @@
 	</section>
 
 	<!-- Tours -->
-	<section class="tours">
-		<h2 class="section__title">Tours</h2>
+	<section class="tours" id="tours">
+		<h2 class="section__title"><span>Tours</span></h2>
 		<div class="tours__content">
 			<div class="tour">
 				<img src="./recursos/img/tour__1.png" alt="Pessoa escalando" class="tour__img">
@@ -90,8 +90,8 @@
 	</section>
 
 	<!-- Blog -->
-	<section class="blog">
-		<h2 class="section__title section__title--direita section__title--blog">Blog</h2>
+	<section class="blog" id="blog">
+		<h2 class="section__title section__title--direita section__title--blog"><span>Blog</span></h2>
 		<div class="blog__content">
 			<div class="blog__imgs">
 				<img src="./recursos/img/marcelo__back.png" alt="" class="blog__img blog__img--back">
@@ -117,8 +117,8 @@
 	</section>
 
 	<!-- Contato -->
-	<section class="contato">
-		<h2 class="section__title section__title--contato">Contato</h2>
+	<section class="contato" id="contato">
+		<h2 class="section__title section__title--contato"> <span>Contato</span></h2>
 		<div class="contato__contents">
 			<div class="contato__info">
 				<address class="contato__address">
@@ -133,7 +133,7 @@
 						<a href="tel:+999999-99999">(99)9999-99999</a>
 					</span><br />
 					<span itemprop="telephone">
-						<a href="tel:+999999-99999">(99)9999-99999</a>
+						<a href="tel:+999999-99999" class="contato_link">(99)9999-99999</a>
 					</span>
 				</p>
 			</div>
@@ -141,53 +141,54 @@
 			<div class="contato__email">
 				<h3 class="email__title">Mande um email</h3>
 				<form class="email__form">
-					<div class="form__item">
-						<input class="form__input" type="text" name="nome" autocomplete="off" required>
-						<label for="nome" class="form__label">
+					<div class="email__item">
+						<input class="email__input" type="text" name="nome" autocomplete="off" required>
+						<label for="nome" class="email__label">
 							<span class="label__span">Nome</span>
 						</label>
 					</div>
-					<div class="form__item">
-						<input class="form__input" type="email" name="email" autocomplete="off" required>
-						<label for="email" class="form__label">
+					<div class="email__item">
+						<input class="email__input" type="email" name="email" autocomplete="off" required>
+						<label for="email" class="email__label">
 							<span class="label__span">Email</span>
 						</label>
 					</div>
-					<div class="form__item">
-						<input class="form__input" type="text" name="duvida" autocomplete="off" required>
-						<label for="duvida" class="form__label">
+					<div class="email__item">
+						<input class="email__input" type="text" name="duvida" autocomplete="off" required>
+						<label for="duvida" class="email__label">
 							<span class="label__span">Dúvida</span>
 						</label>
 					</div>
-					<div class="form__item"><input type="submit" value="Submit" name="submit"></div>
+					<div class="email__item"><input class="btn btn--full" type="submit" value="Submit" name="submit">
+					</div>
 				</form>
 			</div>
 		</div>
 	</section>
 
 	<footer class="footer">
-		<div class="logo">
+		<div class="footer__logo">
 			<i class="fas fa-tree logo__icon"></i>
 			<span class="logo__text">Florestando</span>
 		</div>
 		<div class="footer__nav">
 			<ul class="footer__pages" titulo="Produtos">
-				<li class="footer__page">Lorem</li>
-				<li class="footer__page">Ipsum</li>
-				<li class="footer__page">Dolor</li>
-				<li class="footer__page">Sit amet</li>
+				<li class="footer__page"><a href="#" class="link">Lorem</a> </li>
+				<li class="footer__page"><a href="#" class="link">Ipsum</a> </li>
+				<li class="footer__page"><a href="#" class="link">Dolor</a> </li>
+				<li class="footer__page"><a href="#" class="link">Sit amet</a> </li>
 			</ul>
 			<ul class="footer__pages" titulo="Produtos">
-				<li class="footer__page">Lorem</li>
-				<li class="footer__page">Ipsum</li>
-				<li class="footer__page">Dolor</li>
-				<li class="footer__page">Sit amet</li>
+				<li class="footer__page"><a href="#" class="link">Lorem</a> </li>
+				<li class="footer__page"><a href="#" class="link">Ipsum</a> </li>
+				<li class="footer__page"><a href="#" class="link">Dolor</a> </li>
+				<li class="footer__page"><a href="#" class="link">Sit amet</a> </li>
 			</ul>
 			<ul class="footer__pages" titulo="Produtos">
-				<li class="footer__page">Lorem</li>
-				<li class="footer__page">Ipsum</li>
-				<li class="footer__page">Dolor</li>
-				<li class="footer__page">Sit amet</li>
+				<li class="footer__page"><a href="#" class="link">Lorem</a> </li>
+				<li class="footer__page"><a href="#" class="link">Ipsum</a> </li>
+				<li class="footer__page"><a href="#" class="link">Dolor</a> </li>
+				<li class="footer__page"><a href="#" class="link">Sit amet</a> </li>
 			</ul>
 		</div>
 	</footer>
