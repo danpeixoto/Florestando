@@ -590,7 +590,7 @@ h3 {
 	transition: border-color 250ms;
 }
 
-.email__input:focus {
+.email__input:focus:valid {
 	border-color: var(--color-blue);
 }
 
@@ -607,17 +607,12 @@ h3 {
 	transition-property: color, top;
 }
 
-.email__input:focus+.email__label {
+.email__input:not(:placeholder-shown):valid+.email__label {
 	top: -1.5rem;
 	color: var(--color-blue);
 }
 
-
-.email__input:valid+.email__label {
-	top: -1.5rem;
-	color: var(--color-blue);
-}
-
+.email__input:not(:placeholder-shown):invalid+.email__label,
 .email__input:focus:invalid+.email__label {
 	top: -1.5rem;
 	color: var(--color-red);
